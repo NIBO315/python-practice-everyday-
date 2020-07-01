@@ -16,13 +16,13 @@
 		3.2 调用函数
 		3.3 显示函数
 函数解析：
-	ImageDraw.Draw()
-	ImageDraw.Draw().arc()
-	ImageDraw.Draw().text()
-	ImageFont.truetype()
-	ImageColormap.get()
-	Image.show()
-	Image.open()
+	ImageDraw.Draw(image) - 创建一个可以在给定图像上绘画的对象，俗称画笔（有返回值）
+	draw.arc(xy,start,end,options) - 在指定的区域，从start到end绘制一条弧;xy是一个四元组，表示左上角和右下角的坐标;start和end表示绘制弧的大小（-360，360）;options设置弧的颜色（无返回值）
+	draw.text(position,string,options) - position表示绘制的位置，默认从左上角;string表示绘制的内容;options表示绘制的颜色，常用fill填充（无返回值）
+	ImageFont.truetype(file,size) - 加载一个TrueType或者OpenType的字体文件（file）,并创建一个指定大小（size）的字体对象（有返回值）
+	ImageColor.colormap.get(options) - 从颜色映射图中获取颜色
+	Image.show() - 在图片查看工具上显示当前操作的image对象
+	Image.open(filename) - 打开图片文件或其所在位置
 """
 
 # 从PIL库导入Image等
