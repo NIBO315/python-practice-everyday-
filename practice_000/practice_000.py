@@ -15,7 +15,14 @@
 		3.1 导入图片
 		3.2 调用函数
 		3.3 显示函数
-
+函数解析：
+	ImageDraw.Draw()
+	ImageDraw.Draw().arc()
+	ImageDraw.Draw().text()
+	ImageFont.truetype()
+	ImageColormap.get()
+	Image.show()
+	Image.open()
 """
 
 # 从PIL库导入Image等
